@@ -1,6 +1,6 @@
-CodeBook
+#CodeBook
 ---------------------------------------------------------------
-This document describes the data and transofrmations used by *run_analysis.R* and the definition of variables in *Tidy.txt*.
+This document describes the data and transofrmations used by *run_analysis.R* and the definition of variables in *tidydata.txt*.
 
 ##Dataset Used
 
@@ -43,8 +43,8 @@ Following are the transformations that were performed on the input dataset:
 - `Activity` column in `extractedData` is updated with descriptive names of activities taken from `activityLabels`. `Activity` column is expressed as a factor variable.
 - Acronyms in variable names in `extractedData`, like 'Acc', 'Gyro', 'Mag', 't' and 'f' are replaced with descriptive labels such as 'Accelerometer', 'Gyroscpoe', 'Magnitude', 'Time' and 'Frequency'.
 - `tidyData` is created as a set with average for each activity and subject of `extractedData`. Entries in `tidyData` are ordered based on activity and subject.
-- Finally, the data in `tidyData` is written into `Tidy.txt`.
+- Finally, the data in `tidyData` is written into `tidydata.txt`.
 
 ##Output Data Set
 
-The output data `Tidy.txt` is a a space-delimited value file. The header line contains the names of the variables. It contains the mean and standard deviation values of the data contained in the input files. The header is restructued in an understandable manner. 
+The output data file`tidydata.txt` is a a space-delimited value file. The header line contains the names of the variables. It contains the mean and standard deviation values of the data contained in the input files. The header is restructued in an understandable manner. 
